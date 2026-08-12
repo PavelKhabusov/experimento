@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+
+# Сырые несжатые исходники и рабочие файлы — в репо не нужны.
+# Оптимизированные картинки (assets/posts, assets/thumbs) остаются под git.
+.raw/
+*.session
+ig_session

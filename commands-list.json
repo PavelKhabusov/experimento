@@ -1,0 +1,16 @@
+{
+  "commands": [
+    {
+      "name": "▶ Локальный сервер :8080",
+      "command": "python3 -m http.server 8080",
+      "type": "terminal",
+      "group": "Experimento"
+    },
+    {
+      "name": "🌐 Открыть в браузере",
+      "command": "xdg-open http://localhost:8080",
+      "type": "terminal",
+      "group": "Experimento"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXPERIMENTO — arte hecho a mano · Asunción, Paraguay</title>
+<meta name="description" content="EXPERIMENTO — prendas pintadas a mano, bordados, cuadros y objetos de arcilla. Por Lorenzo Carrillo, Asunción, Paraguay.">
+<meta property="og:title" content="EXPERIMENTO — arte hecho a mano">
+<meta property="og:description" content="Prendas pintadas a mano, bordados, cuadros y objetos. Asunción, Paraguay.">
+<meta property="og:image" content="assets/posts/experimento_DAZqrISxsHa_00.jpg">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top">
+    <img src="assets/favicon.png" alt="" class="brand-face">
+    <span>EXPERIMENTO</span>
+  </a>
+  <nav class="topnav">
+    <a href="#obras" data-i18n="nav_obras">Obras</a>
+    <a href="#sobre" data-i18n="nav_sobre">Sobre mí</a>
+    <a href="#viajes" data-i18n="nav_viajes">Viajes</a>
+    <a href="#historias" data-i18n="nav_hist">Historias</a>
+    <a class="nav-ig" href="https://www.instagram.com/experimentoo00/" target="_blank" rel="noopener">Instagram ↗</a>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-dots" aria-hidden="true"></div>
+    <p class="hero-kicker" data-i18n="hero_kicker">✷ arte hecho a mano — Asunción, Paraguay ✷</p>
+    <h1 class="hero-title" aria-label="EXPERIMENTO">
+      <span>E</span><span>X</span><span>P</span><span>E</span><span>R</span><span>I</span><span>M</span><span>E</span><span>N</span><span>T</span><span>O</span>
+    </h1>
+    <p class="hero-sub">
+      <span data-i18n="hero_sub">Prendas pintadas a mano · bordados · cuadros · arcilla</span><br>
+      <span class="hand" data-i18n="hero_by">por Lorenzo Carrillo</span>
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-ink" href="#obras" data-i18n="cta_obras">Ver obras ↓</a>
+      <a class="btn" href="https://www.instagram.com/experimentoo00/" target="_blank" rel="noopener">@experimentoo00</a>
+    </div>
+    <img class="hero-sticker" src="assets/favicon.png" alt="">
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>PINTADA A MANO ✷ BORDADO A MANO ✷ ARCILLA ✷ PIEZAS ÚNICAS ✷ ASUNCIÓN PY&nbsp;✷&nbsp;</span><span>PINTADA A MANO ✷ BORDADO A MANO ✷ ARCILLA ✷ PIEZAS ÚNICAS ✷ ASUNCIÓN PY&nbsp;✷&nbsp;</span><span>PINTADA A MANO ✷ BORDADO A MANO ✷ ARCILLA ✷ PIEZAS ÚNICAS ✷ ASUNCIÓN PY&nbsp;✷&nbsp;</span><span>PINTADA A MANO ✷ BORDADO A MANO ✷ ARCILLA ✷ PIEZAS ÚNICAS ✷ ASUNCIÓN PY&nbsp;✷&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- OBRAS -->
+  <section class="section" id="obras">
+    <h2 class="section-title"><span data-i18n="obras_title">Obras</span><span class="hand section-note" data-i18n="obras_note">cada pieza es única</span></h2>
+    <div class="filters" role="tablist" aria-label="Filtrar obras">
+      <button class="chip is-active" data-cat="all" data-i18n="f_all">Todo</button>
+      <button class="chip" data-cat="prendas" data-i18n="f_prendas">Prendas</button>
+      <button class="chip" data-cat="dibujos" data-i18n="f_dibujos">Dibujos</button>
+      <button class="chip" data-cat="bordados" data-i18n="f_bordados">Bordados</button>
+      <button class="chip" data-cat="cuadros" data-i18n="f_cuadros">Cuadros</button>
+      <button class="chip" data-cat="objetos" data-i18n="f_objetos">Objetos</button>
+      <button class="chip" data-cat="sesion" data-i18n="f_sesion">Sesión</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section sobre" id="sobre">
+    <div class="sobre-card">
+      <img class="sobre-face" src="assets/avatar_lorenzo.jpg" alt="Lorenzo Carrillo">
+      <div class="sobre-text">
+        <h2 class="section-title" data-i18n="sobre_title">Sobre mí</h2>
+        <p data-i18n-html="sobre_p1"><strong>Lorenzo Carrillo</strong> — artista y estudiante de arquitectura de Asunción, Paraguay.
+        <span class="hi">EXPERIMENTO</span> es su laboratorio: caras imposibles dibujadas en tinta,
+        remeras y camisas pintadas a mano, bordados puntada por puntada, cuadros y soles de arcilla.</p>
+        <p data-i18n="sobre_p2">Nada se imprime, nada se repite: cada prenda y cada objeto sale de sus manos, pieza por pieza,
+        y se vende en ferias locales o directo por Instagram.</p>
+        <p class="hand sobre-hand" data-i18n="sobre_hand">— la arquitectura me enseñó a mirar; el dibujo, a desobedecer.</p>
+        <div class="sobre-links">
+          <a class="btn btn-ink" href="https://www.instagram.com/experimentoo00/" target="_blank" rel="noopener">@experimentoo00</a>
+          <a class="btn" href="https://www.instagram.com/_lorenzocarrillo/" target="_blank" rel="noopener">@_lorenzocarrillo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIAJES -->
+  <section class="section section-wide" id="viajes">
+    <h2 class="section-title"><span data-i18n="viajes_title">Viajes &amp; arquitectura</span><span class="hand section-note" data-i18n="viajes_note">lo que alimenta el ojo</span></h2>
+    <p class="section-lead" data-i18n="viajes_lead">De Gaudí a Le Corbusier, de las salinas del altiplano a Niterói — el cuaderno visual detrás de las obras.</p>
+    <div class="strip" id="strip"></div>
+  </section>
+
+  <!-- HISTORIAS (highlights) -->
+  <section class="section" id="historias">
+    <h2 class="section-title"><span data-i18n="hist_title">Historias</span><span class="hand section-note" data-i18n="hist_note">del taller y las ferias</span></h2>
+    <p class="section-lead" data-i18n="hist_lead">Momentos guardados: ferias, prendas puestas, bordados en proceso, dibujos y cuadros.</p>
+    <div class="hl-tabs" id="hlTabs"></div>
+    <div class="hl-grid" id="hlGrid"></div>
+  </section>
+
+  <!-- PEDIDO -->
+  <section class="section pedido">
+    <h2 class="pedido-title" data-i18n="pedido_title">¿Querés una pieza?</h2>
+    <p class="pedido-sub hand" data-i18n="pedido_sub">se aceptan encargos — remeras, bordados, cuadros</p>
+    <a class="btn btn-big btn-ink" href="https://ig.me/m/experimentoo00" target="_blank" rel="noopener" data-i18n="pedido_btn">Escribime por Instagram ✷</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>EXPERIMENTO · Asunción, Paraguay</span>
+  <span class="footer-links">
+    <a href="https://www.instagram.com/experimentoo00/" target="_blank" rel="noopener">@experimentoo00</a> ·
+    <a href="https://www.instagram.com/_lorenzocarrillo/" target="_blank" rel="noopener">@_lorenzocarrillo</a>
+  </span>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Cerrar">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Anterior">←</button>
+  <figure class="lb-figure">
+    <img id="lbImg" src="" alt="">
+    <figcaption class="lb-cap">
+      <div class="lb-head">
+        <strong id="lbTitle"></strong>
+        <span class="badge" id="lbBadge"></span>
+        <span class="lb-count" id="lbCount"></span>
+      </div>
+      <p id="lbText"></p>
+    </figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Siguiente">→</button>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
