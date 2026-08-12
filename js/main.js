@@ -52,8 +52,7 @@ const I18N = {
   },
 };
 
-let lang = localStorage.getItem('exp-lang')
-  || (navigator.language && navigator.language.startsWith('es') ? 'es' : 'en');
+let lang = localStorage.getItem('exp-lang') || 'es';
 
 const t = () => I18N[lang];
 

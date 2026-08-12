@@ -30,6 +30,12 @@ img { max-width: 100%; display: block; }
 
 a { color: inherit; }
 
+a, button {
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+button { -webkit-appearance: none; appearance: none; }
+
 .hand { font-family: var(--font-hand); font-size: 1.35em; font-weight: 600; }
 
 /* ---------- topbar ---------- */
@@ -51,6 +57,7 @@ a { color: inherit; }
 }
 .topnav { display: flex; gap: clamp(10px, 2.5vw, 26px); align-items: center; flex-wrap: wrap; }
 .topnav a {
+  color: var(--ink);
   text-decoration: none; font-weight: 500; font-size: 15px;
   padding: 2px 4px;
 }
@@ -129,6 +136,7 @@ a { color: inherit; }
 
 .chip {
   padding: 7px 16px; border: var(--border); background: var(--paper);
+  color: var(--ink);
   font-family: var(--font-body); font-weight: 500; font-size: 14px;
   cursor: pointer; box-shadow: var(--shadow-sm);
   transition: transform .12s, box-shadow .12s;
@@ -311,8 +319,31 @@ a { color: inherit; }
 .lb-next:hover { transform: translateY(-50%) translate(3px, 3px); }
 
 /* ---------- responsive ---------- */
+@media (max-width: 720px) {
+  .topbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 8px 14px;
+    gap: 8px 10px;
+  }
+  .brand { font-size: 17px; width: 100%; }
+  .topnav {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+  .topnav::-webkit-scrollbar { display: none; }
+  .topnav a, .topnav .lang-toggle { flex: none; font-size: 13px; white-space: nowrap; }
+  .nav-ig { flex: none; }
+  .lang-toggle { margin-left: auto; }
+}
+
 @media (max-width: 640px) {
-  .topnav a:not(.nav-ig) { font-size: 13px; }
   .sobre-card { flex-direction: column; align-items: center; text-align: left; }
   .sobre-face { transform: rotate(-2deg); }
   .hero-sticker { display: none; }
